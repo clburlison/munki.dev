@@ -5,7 +5,7 @@ Vagrant setup for a munki_repo development site. Only tested on Mavericks (OS X 
 
 Although this is a self-contained project, prior knowledge of munki will allow you to make the most of this project. To get started take a look at the [Wiki](https://code.google.com/p/munki/wiki/GettingStartedWithMunki).
 
-Setup built with puphpet https://puphpet.com
+Setup built with [PuPHPet](https://puphpet.com)
 
 ##Purpose of this virtual machine
 

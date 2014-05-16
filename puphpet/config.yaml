@@ -7,7 +7,7 @@ vagrantfile-local:
         network:
             private_network: 192.168.56.150
             forwarded_port:
-                3Gw4Y1TWbSPa:
+                439jPVj0imGG:
                     host: '9148'
                     guest: '22'
         provider:
@@ -26,9 +26,9 @@ vagrantfile-local:
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
                     - '--parser future'
         synced_folder:
-            gQ1WP0fxKb02:
-                source: ./
-                target: /var/www
+            rhuqMVRutiuu:
+                source: ./munki_repo
+                target: /var/www/munki_repo
                 nfs: 'false'
         usable_port_range: 2200..2250
     ssh:
@@ -71,7 +71,7 @@ apache:
         - php
         - rewrite
     vhosts:
-        FJ2HD6xqEuwZ:
+        Sy0M1zL5VKB3:
             servername: munki.dev
             serveraliases:
                 - www.munki.dev
@@ -81,6 +81,10 @@ apache:
                 - 'APP_ENV dev'
             override:
                 - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
             custom_fragment: ''
             ssl_cert: ''
             ssl_key: ''
@@ -91,7 +95,7 @@ apache:
 nginx:
     install: 0
     vhosts:
-        wRZejj57qKKm:
+        XvemFwx7QPQ0:
             server_name: awesome.dev
             server_aliases:
                 - www.awesome.dev
@@ -105,14 +109,13 @@ nginx:
                 - 'APP_ENV dev'
 php:
     install: 0
-    version: '54'
+    version: '55'
     composer: '1'
     modules:
         php:
             - cli
             - intl
             - mcrypt
-            - sqlite
         pear: {  }
         pecl:
             - pecl_http
@@ -136,17 +139,17 @@ drush:
         drush.tag_branch: 6.x
 mysql:
     install: 0
-    root_password: root
+    root_password: '123'
     phpmyadmin: 0
     adminer: 0
     databases:
-        1MOE93x52yWp:
+        54tP3GrCi8af:
             grant:
                 - ALL
-            name: munkireport
+            name: dbname
             host: localhost
-            user: munki
-            password: munki
+            user: dbuser
+            password: '123'
             sql_file: ''
 postgresql:
     install: 0

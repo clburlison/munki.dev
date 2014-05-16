@@ -8,13 +8,11 @@ Although this is a self-contained project, prior knowledge of munki will allow y
 Setup built with puphpet https://puphpet.com
 
 ##Purpose of this virtual machine
----
 
 This will allow you to host a munki_repo with vagrant. Great for testing code without the need for another box (all testing is done locally). The ``boostrap.sh`` file even comes with the ability to setup an initial munki_repo from Github for testing purposes.
 
 
 ###Prerequisites
----
 
 * Vagrant  http://www.vagrantup.com
 * VirtualBox  https://www.virtualbox.org

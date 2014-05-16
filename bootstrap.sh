@@ -6,16 +6,16 @@ source_path=$(dirname "${0}")
 ###################################################
 # Option 1 - Download test munki_repo from GitHub #
 ###################################################
-# echo "Get a test munki_repo.dev from git"
-# 
-# git clone https://github.com/clburlison/munki_repo.dev.git -b master munki_repo
+echo "Get a test munki_repo.dev from git"
+
+git clone https://github.com/clburlison/munki_repo.dev.git -b master munki_repo
 
 #################################################################
 # Option 2 - Use a munki_repo that exists on your admin machine #
 #################################################################
-echo "Add link to a local munki_repo"
-
-ln -s /Users/clburlison/src/mine/munki_repo.dev/ ${source_path}/munki_repo
+# echo "Add link to a local munki_repo"
+# 
+# ln -s /Users/clburlison/src/mine/munki_repo.dev/ ${source_path}/munki_repo
 
 ####################
 # Bookstrap the VM #

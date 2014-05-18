@@ -25,7 +25,7 @@ Run ``./cleanup.sh`` to destroy the virtual machine and delete all of the files 
 
 Your client computer will also need a copy of munkitools installed (links above). The following commands can be used with the development munki_repo from Option 1.  
 ````bash
-sudo defaults write /Library/Preferences/ManagedInstalls SoftwareRepoURL "http://munki.dev/munki_repo"
+sudo defaults write /Library/Preferences/ManagedInstalls SoftwareRepoURL "http://192.168.56.150/munki_repo"
 sudo defaults write /Library/Preferences/ManagedInstalls ClientIdentifier testing
 ````
 

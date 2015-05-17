@@ -1,7 +1,7 @@
 munki.dev
 ===============
 
-Blog post regarding setup [here](http://www.clburlison.com/blog/2014/05/17/creating-a-development-munki-repo/)
+Blog post regarding setup [here](https://clburlison.com/creating-a-development-munki-repo/)
 
 Vagrant setup for a munki_repo development site. Only tested on Mavericks (OS X 10.9)
 
@@ -10,7 +10,7 @@ Vagrant setup for a munki_repo development site. Only tested on Mavericks (OS X 
 * Vagrant  http://www.vagrantup.com
 * VirtualBox  https://www.virtualbox.org
 * Git  http://sourceforge.net/projects/git-osx-installer/
-* Munkitools  [munkitools v.1- latest.dmg](https://munkibuilds.org/munkitools-latest.dmg) or [munkitools v.2 - latest.pkg](https://munkibuilds.org/munkitools2-latest.pkg)
+* Munkitools https://github.com/munki/munki/releases
 
 ###Installation
 
